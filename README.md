@@ -35,3 +35,7 @@ https://uniredbot.herokuapp.com/webhooks/telegram_fdklaafjiroewvnkwrnvkdlsvf
 
 rut - Sin puntos ni guión /rut 170859227
 cuentas - Lista de tus cuentas pendientes
+
+https://uniredbot.herokuapp.com/webhooks/telegram_fdklaafjiroewvnkwrnvkdlsvf
+
+https://api.telegram.org/bot547185893:AAFZZ_cgcd_ZbYPdWtFI6FMJmIWdchk8rT0/setWebhook?url=https://uniredbot.herokuapp.com/webhooks/telegram_fdklaafjiroewvnkwrnvkdlsvf
