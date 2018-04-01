@@ -51,7 +51,8 @@ module BotCommand
     end
 
     def start
-      send_message('Bienvenido, para darte información sobre tus cuentas debes darme tu RUT sin puntos ni guión.\n De esta forma: rut/ 123456789')
+      send_message('Bienvenido, para darte información sobre tus cuentas debes darme tu RUT sin puntos ni guión.')
+      send_message('De esta forma: /rut 123456789')
       user.reset_next_bot_command
       user.set_next_bot_command('BotCommand::Born')
     end
@@ -78,7 +79,34 @@ module BotCommand
       user.reset_next_bot_command
     end
   end
+
+  class GetDebt < Base
+    def start
+      send_message('Pronto estará lista esta funcionalidad, ¿te gustaría que te avise por e-mail?')
+      send_message('Dame tu e-mail así /email ejemplo@gmail.com')
+    end
+  end
+
+  class BadRut < Base
+    def start
+      send_message('Formato equivocado, envía tu rut sin puntos ni guión así: /rut 123456789.')
+    end
+  end
+
+  class GoodRut < Base
+    def start
+      send_message('Listo, ¿Te gustaría poder pagar tus cuentas de luz, agua y teléfono con un solo mensaje?.')
+      send_message('Escribe /cuentas')
+      
+    end
+  end
   
+  class SomeMessage < Base
+    def start
+      send_message(message)      
+    end
+  end
+
   class Undefined < Base
     def start
       send_message('Unknown command. Type /start if you are a new user or you have finished the game, else type the appropriate command.')

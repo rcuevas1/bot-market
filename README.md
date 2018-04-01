@@ -23,8 +23,15 @@ Things you may want to cover:
 
 * ...
 
+This is the tutorial used https://tutorials.botsfloor.com/full-guide-on-creating-statefull-telegram-bot-523def0a7930
 
-https://api.telegram.org/bot547185893:AAFZZ_cgcd_ZbYPdWtFI6FMJmIWdchk8rT0/setWebhook?url=https://9c5e773e.ngrok.io/webhooks/telegram_fdklaafjiroewvnkwrnvkdlsvf
+
+https://api.telegram.org/bot547185893:AAFZZ_cgcd_ZbYPdWtFI6FMJmIWdchk8rT0/setWebhook?url=https://b20ebc35.ngrok.io/webhooks/telegram_fdklaafjiroewvnkwrnvkdlsvf
 
 API TOKEN: 547185893:AAFZZ_cgcd_ZbYPdWtFI6FMJmIWdchk8rT0
-Ngrok URL: https://9c5e773e.ngrok.io
+Ngrok URL: https://b20ebc35.ngrok.io
+
+https://uniredbot.herokuapp.com/webhooks/telegram_fdklaafjiroewvnkwrnvkdlsvf
+
+rut - Sin puntos ni guión /rut 170859227
+cuentas - Lista de tus cuentas pendientes
