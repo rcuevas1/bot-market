@@ -10,11 +10,22 @@ class Job < ApplicationRecord
     res = Net::HTTP.start(url.host, url.port) {|http|
       http.request(req)
     }
-    res
 
     response_hash = JSON.parse res.body
     info_url = response_hash["url"] #this url contains the info we want to extract
+
+    #sleep(2)
     
+
+  end
+
+  def test
+    url = URI.parse("https://www.unired.cl/Consulta/ReturnPartialView?u=tQtfv%252b%252be9PPcbOstGguyRbvN8cSMgKj8fGZkdOLSeqM%253d")
+    req = Net::HTTP::Get.new(url.to_s)
+    res = Net::HTTP.start(url.host, url.port) {|http|
+      http.request(req)
+    }
+    return url.to_s
   end
 end
 

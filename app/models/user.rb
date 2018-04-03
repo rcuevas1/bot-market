@@ -34,7 +34,7 @@ class User < ApplicationRecord
     if response_hash["status"] == "ok"
       Job.create(user_id: self.id, shub_job_id: response_hash["jobid"])
     else
-      puts "Something happend with this request :S"
+      puts "Something happend with this request."
     end
         
   end
